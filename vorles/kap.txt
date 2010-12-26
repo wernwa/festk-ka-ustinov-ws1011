@@ -1,0 +1,17 @@
+01 Bindungskräfte
+02 Struktur der Festkörper
+03 Strukturbestimmung und reziprokes Gitter
+04 Strukturelle Defekte
+05 Gitterdynamik
+06 Elastische Eigenschaften, Phononen
+07 Isolatoren
+08 Fermi-Gas freier Elektronen
+09 Energiebänder und Fermiflächen
+10 Dynamik von Kristallelektronen
+11 Halbleiter
+12 Magnetismus
+13 Supraleitung
+
+Alexey Ustinov
+
+

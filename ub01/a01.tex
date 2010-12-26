@@ -1,0 +1,132 @@
+\input{../../headers/header_script.tex}
+
+%couchdb db=physik
+%couchdb id=festkub01
+%couchdb tags=festkub
+%couchdb pdflink=http://wernwa-physik-ka.googlecode.com/svn/festkub/ub01/a01.pdf
+
+\begin{document}
+\section*{Aufgabe 1}
+
+Um die Bindung zwischen Gitterbausteinen zu beschreiben, setzt man deren Wechsel-Wirkungsenergie $\phi_{ij}$ aus einem anziehenden und abstoßenden Term zusammen:
+
+$$\phi_{ij}=-\frac{a}{r_{ij}}+\frac{b}{r_{ij}}$$
+
+\begin{enumerate}
+\item[\textbf{a})] Diskutieren Sie mögliche Ursachen für anziehende und abstoßende Wechselwirkungen im Potential zwischen Gitterbausteinen.
+\item[\textbf{b})] Zeigen Sie, dass ein stabiler Zustand nur für $n > m$ möglich ist.
+\item[\textbf{c})] Zeigen Sie, dass sich aus der Form von $\phi_{i,j}$ bei $T = 0$ die statistische Gleichgewichts-energie ergibt zu:
+
+$$ \left. U_{b0}\right|_{T=0} = -\frac{N_P A}{V^{m/3}_0}(1-\frac{m}{n})$$
+
+Hinweis: Vereinfachen Sie die Gleichgewichtsenergie zunächst zu $U_b=-\frac{N_PA}{V^{m/3}}+ \frac{N_PA}{V^{n/3}}$. Setzen Sie dazu $r_{ij} = p_{ij} r_0$ , wobei $r_0$ = Abstand nächster Nachbarn und $r_0 = V /N$ mit $V$ = Volumen des Körpers bei beliebiger Temperatur, $V_0$ = Volumen des Körpers bei $T=0$, $N$ = Zahl der Gitterbausteine und $N_P$ = Zahl der wechselwirkenden Paare. Zur Berechnung des thermodynamischen Gleichgewichts bei der Temperatur T betrachtet man dann die freie Energie $F=U-TS$.
+
+\item[\textbf{d})] Welcher Zusammenhang besteht zwischen n, m und dem isothermen Kompressionsmodul $K = -V_0 (\partial p/\partial V )T$ bei $T = 0$? Hinweis: Benutzen Sie $dU_b = -pdV$ bzw. $p = -\partial U_b$ und setzen Sie erst am Schluss die Beziehung zwischen den Koeffizienten $\partial V$ A und B ein, die Sie im Teil c) für $T = 0$ gefunden haben.
+\end{enumerate}
+
+
+
+
+
+\subsection*{LSG Aufgabe 1 a)}
+
+Anziehend:
+\begin{itemize}
+\item Van-der-Waals: Dipol-Dipol-WW (Fluktuationsbindung)
+\item Coulomb-WW: (Ionenbindung)
+\item Kovalente Bindung
+\end{itemize}
+
+Abstoßend:
+\begin{itemize}
+\item Auswirkung des Pauli-Prinzips ($e^-$ müsste Angeregt werden, kostet Energie $\rightarrow$ repulsive Kraft)
+\end{itemize}
+
+\underline{LSG Aufgabe 1 b)}
+
+$$\phi_{ij}=-\underbrace{\frac{a}{r^m_{ij}}}_{Anziehung}+\underbrace{\frac{b}{r^n_{ij}}}_{Abstoßung}$$
+
+
+$$\frac{d}{dr}\phi_{ij}=0=amr^{-(m+1)}-bnr^{-(n+1)}$$
+$$\Leftrightarrow amr^{-(m+1)}=bnr^{-(n+1)}$$
+$$\frac{r^{-(m+1)}}{r^{-(n+1)}}=\frac{bn}{an} $$
+$$(*)r^{n-m}=\frac{bn}{am}$$ 
+
+$$\frac{d^2}{dr^2}\phi_{ij}=-am(m+1)r^{-(m+2)}+bn(n+1)r^{-(n+2)}>0$$
+$$\Leftrightarrow bn(n+1)r^{-(n+2)}>am(m+1)r^{-(m+2)}$$
+
+$$\left. \frac{r^{-(n+2)}}{r^{-(m+2)}}  > \frac{am(m+1)}{bn(n+1)}\qquad \right|^{-1}$$
+
+$$\frac{r^{-(m+2)}}{r^{-(n+2)}}  < \frac{bn(n+1)}{am(m+1)}$$
+
+$$r^{n-m} < \frac{bn(n+1)}{am(m+1)}$$
+$$^{(*)}= r^{n-m}= \frac{bn}{am} < \frac{bn(n+1)}{am(m+1)}$$
+
+$$ \Rightarrow m<n $$
+
+
+
+\subsection*{LSG Aufgabe 1 c)}
+
+Mit $r^m_0=(r^3_0)^{m/3}=(\frac{V}{N})^{m/3}$, $r_{ij} = p_{ij} r_0$ und $U_b=\frac{1}{2}\sum_{i,j}\phi_{ij}$
+
+\begin{align}
+\phi_{ij}&=-\frac{a}{r^m_{ij}}+\frac{b}{r^n_{ij}} \\
+&=-\frac{a}{p^m_{ij}r^m_0}+\frac{b}{p^n_{ij}r^n_0} \\
+&=-\frac{aN^{m/3}}{p^m_{ij}V^{m/3}}+\frac{bN^{n/3}}{p^n_{ij}N^{n/3}} 
+\end{align}
+
+\begin{align}
+U_b&=\frac{1}{2}\sum_{i,j}\phi_{ij}\\
+&=\frac{N}{2}\sum_{i\neq j}\phi_{ij}\\
+&=N_p\sum_{i\neq j}-\frac{aN^{m/3}}{p^m_{ij}V^{m/3}}+\frac{bN^{n/3}}{p^n_{ij}V^{n/3}} \\
+\end{align}
+
+mit $A=\sum_{i\neq j}\frac{aN^{m/3}}{p^m_{ij}}$ und $B=\frac{bN^{n/3}}{p^n_{ij}}$
+
+$$\Rightarrow U_b = -\frac{N_PA}{V^{m/3}}+\frac{N_PB}{V^{n/3}}\equiv F \qquad \text{da } F=U-\underbrace{TS}_{=0,T=0}$$
+
+Gleichgewicht $\rightarrow \left. \frac{\partial F}{\partial V}\right|_{V_0}=0$ ($V_0$ eingesetzt)
+
+$$\left. \frac{\partial F}{\partial V}\right|_{V_0}=\frac{m}{3}\frac{N_PA}{V^{m/3+1}}-\frac{n}{3}\frac{N_PB}{V^{n/3+1}}\stackrel{\mathrm{!}}=0$$
+
+$$\leftrightarrow \frac{m}{3}\frac{N_PA}{V^{m/3+1}}=\frac{n}{3}\frac{N_PB}{V^{n/3+1}}$$
+
+$$m\frac{A}{V^{m/3+1}}=n\frac{B}{V^{n/3+1}}$$
+$$ B=\frac{m}{n}\frac{V^{n/3+1}}{V^{m/3+1}}A $$
+
+
+
+
+$$\Rightarrow U_{b0}= -\frac{N_pA}{V^{m/3}}(1-\frac{m}{n})$$
+
+
+\subsection*{LSG Aufgabe 1 d)}
+
+\begin{align}
+\kappa &= - V_0\frac{\partial p}{\partial V}= \frac{\partial^2 U_b}{\partial^2 V}\\
+&= V_0\frac{\partial^2}{\partial^2 V}\left(-\frac{N_PA}{V^{m/3}}+\frac{N_PB}{V^{n/3}}\right)\\
+&= V_0\frac{\partial}{\partial V}\left(\frac{m}{3}\frac{N_PA}{V^{m/3+1}}-\frac{n}{3}\frac{N_PB}{V^{n/3+1}}\right)\\
+&= V_0\left(-\frac{m+1}{3}\frac{N_PA}{V^{m/3+2}}+\frac{n+1}{3}\frac{N_PB}{V^{n/3+2}}\right)\\
+\end{align}
+mit $ B=\frac{m}{n}\frac{V^{n/3+1}}{V^{m/3+1}}A $
+
+\begin{align}
+\kappa &= V_0\left(-\frac{m+1}{3}\frac{N_PA}{V^{m/3+2}}+\frac{n+1}{3}\frac{N_P}{V^{n/3+2}}\frac{m}{n}\frac{V^{n/3+1}}{V^{m/3+1}}A \right)\\
+&= V_0AN_P\left(-\frac{m+1}{3}\frac{1}{V^{m/3+2}}+\frac{n+1}{3}\frac{1}{V^{n/3+2}}\frac{m}{n}\frac{V^{n/3+1}}{V^{m/3+1}} \right)\\
+&= V_0AN_P\left(-\frac{m+1}{3}\frac{1}{V^{m/3+2}}\frac{n}{n}+\frac{n+1}{3}\frac{m}{n}\frac{1}{V^{m/3+2}} \right)\\
+&= V_0AN_P\left(\frac{-(m+1)n+(n+1)m}{3V^{m/3+2}} \right)\\
+&= V_0AN_P\left(\frac{-nm-n+nm+m}{3V^{m/3+2}} \right)\\
+&= V_0AN_P\left(\frac{m-n}{3V^{m/3+2}} \right)???\\
+^{Muster}&=\frac{N_PAm}{9V^{m/3+1}_0}(n-m)
+\end{align}
+
+
+
+\underline{LSG Aufgabe 2)}
+
+
+
+
+
+\end{document}

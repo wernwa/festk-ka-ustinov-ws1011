@@ -1,0 +1,119 @@
+\input{../headers/header_script.tex}
+
+%\includegraphics[width=0.75\textwidth]{thepic.png}
+%couchdb db=physik
+%couchdb id=festkvorles01_Vorbemerkung
+%couchdb tags=festk
+%couchdb pdflink=http://wernwa-physik-ka.googlecode.com/svn/festk/kap01.pdf
+
+\begin{document}
+%\tableofcontents
+\setcounter{chapter}{0}
+\chapter*{Vorbemerkung}
+
+\underline{Festkörperphysik}: Aufbau und Eigenschaften fester Materialien
+
+\underline{Festkörper}: Ansammlung von Atomkernen und Elektronen \(\approx
+10^{23}\) die über elektrostatische Kräfte miteinander wechselwirken
+
+\underline{Klassen}
+\begin{enumerate}
+\item Isolatoren
+\item Halbleiter
+\item Metalle+Supraleiter
+\end{enumerate}
+
+Fundamentale Konzepte in der Festkörperphysik:
+
+\begin{enumerate}
+\item Schrödinger-Gleichung
+\item Pauli-Prinzip
+\item Coulomb-WW
+\item Maxwell-Gleichungen
+\item Thermodynamik
+\item Statistische Physik
+\end{enumerate}
+
+\boxed{Max Born} Phononen=elastische Schwingungen
+
+\chapter{Bindungskräfte im Festkörper}
+5 Grundtypen der Bindung
+\begin{enumerate}
+\item Fluktuationsbindung (Van-der-Waals Kraft
+\item Ionenbindung (NaCl)
+\item Kovalente Bindung (Diamant)
+\item Metallische Bindung
+\item Wasserstoffbrückenbindung
+\end{enumerate}
+
+\underline{Bindungsenergie} 
+die Arbeit, die bei der Zerlegung des Festkörper in seine Bestandteile (Atome
+oder Moleküle ) aufgewendet werden muss.
+
+z.B. die Elemente der zweiten Periode des Periodensystems:
+\begin{tabular}{ccccccccc}
+&Li&Be&B&C(Diamant)&N&O&F&Ne\\
+Bindungsenergie\(\left[\frac{eV}{Atom}\right]\)&1,6&3,3&5,8&7,4&4,9&2,6&0,8&0,02\\
+Schmelztemperatur[K]&453&1560&2348&4765&63(*)&54(*)&53(*)&24
+\end{tabular}
+
+(*) Molekülkristalle \(N_2,O_2,F_2\). Aus diesem Grund behält die Flüssigkeit die
+meiste Energie.
+
+
+http://de.wikipedia.org/wiki/Lennard-Jones-Potential
+Das Lennard Jones Potential:
+Potential zwischen neutralen Atomen (oder Molekülen) mit abgeschlossener
+\(e^-\)-Schale
+a) der anziehende Teil \(\approx -r^{-6}\)
+b) der abstoßende Teil \(\approx r^{-12}\)
+
+\(\boxed{\phi(r)=\frac A {r^{12}}-\frac B {r^{6}}}\)
+
+pic TODO
+
+\underline{Van-der-Waals-Bindung}
+
+pic TODO
+
+\(\phi_{12}(\vec r) \propto \frac {\vec p_1\vec p_2}{r^3}-\frac{3(\vec p_1 \vec
+  r)(\vec p_2 \vec r}{r^5}\)
+
+\section{Bindungsenergie von Edelgaskristallen}
+
+http://de.wikipedia.org/wiki/Lennard-Jones-Potential
+Das Lennard Jones Potential:
+
+ 
+\begin{eqnarray}
+\phi(r) &=& \frac A {r^{12}}-\frac B {r^6} \\
+&=&4\epsilon \left[ \left(\frac\sigma r\right)^{12}-\left(\frac\sigma r\right)^6\right]
+\end{eqnarray}
+das Potential minimum tritt bei \(r_0=2^{\frac 1 6}\sigma\approx 1,12\sigma\)
+Bindungsenergie von N Atomen
+\[ V_B=\frac 1 2 \sum_i\phi_i=\frac N 2 \phi_1=2N\epsilon\sum_{j\neq1}\left[
+  \left(\frac\sigma r\right)^{12}-\left(\frac\sigma r\right)^6\right] \]
+Kubisch flächenzentrierte Struktur fcc=face centered cubic \(r_{ij}=R=12;R\sqrt
+2=6;2R...\)
+\[ U_B=2N\epsilon\left[
+  \left(\frac\sigma r\right)^{12}\cdot\underbrace{
+    \left(\frac{12}{1^12}+\frac{6}{\sqrt 2^{12}}+...\right)}_{\approx 12,13}
+-\left(\frac\sigma r\right)^6 \cdot\underbrace{
+  \left(\frac{12}{1^12}+\frac{6}{\sqrt 2^{12}}+...\right)}_{\approx 14,45}
+\right]
+\]
+
+\(R_0\approx 1,09\sigma\rightarrow\) nur für \(E_{kin}=0\) (in qm \(E_{kin}\neq
+0\Rightarrow R_{0qm}>R_0\)) ein Minimum von \(U_B(R)\) beim
+\(R=R_0\Rightarrow\left.\frac{dU_B}{dR}\right|_{R=R_0}=0;\left.\frac{d^2U_B}{dR^2}\right|_{R=R_0}>0\)
+
+\begin{tabular}{c|cccc}
+&Ne&Ar&Kr&Xe \\
+\(\sigma(A^{\circ})\)&2,74&3,40&3,65&3,98 \\
+\(\epsilon(meV)\)&3,1&10,4&14,1&20,0 \\
+\(\frac {R_0} \sigma\)&1,15&1,11&1,09&1,09
+\end{tabular}
+
+\underline{Nullpunktenergie}
+
+\end{document}
