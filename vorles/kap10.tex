@@ -1,0 +1,59 @@
+\input{../headers/header_script.tex}
+%\includegraphics[width=0.75\textwidth]{thepic.png}
+\begin{document}
+%\tableofcontents
+\setcounter{chapter}{9}
+\chapter{Elektronische Transporteigenschaften}
+
+Bewegung der \(e^-\)-nen, effektive Masse.
+
+\section{Elektronien als Wellenpakete}
+
+Ausgedehnte Wellen \(\delta k\delta r > 1\)
+
+\includegraphics[width=0.75\textwidth]{kap10_01.png}
+
+\[\psi(\vec r,t) = \sum_{\vec k} g(\vec k)\cdot e^{i(\vec k\vec r - \frac{\hbar k^2}{2m}t}\]
+
+mit \(r= \frac{pt}{2m}\)
+
+Koeffizienten \(g(\vec k)\) sind innerhalb \(\delta k\) 'gaußförmig' verteilt. Das entspricht einer semiklassischen Näherung. 
+
+\[\frac{\partial \vec r}{\partial t} \equiv \vec v(\vec k) = \frac{1}{\hbar}\nabla_{\vec k}E(\vec k) = \frac{1}{\hbar} \frac{\partial E(\vec k)}{\partial \vec k} \]
+
+mit \(E(\vec k) \) Energie vom Wellenpaket. z.B. für freie \(e^-\)-nen \(E=\frac{\hbar^2 k^2}{2m}\); \(v_g=\frac{\hbar k}{m}\) Gruppengeschwindikeit.
+
+Semiklassische Bewegungsgleichung:
+
+\[\hbar \frac{\partial \vec k}{\partial t}=\vec F = -e\vec \vec{ \mathcal E}(\vec r,t) -\vec v(\vec k)\times \vec B(\vec r,t)  \]
+
+\(\vec{ \mathcal E}\) Elektrisches Feld; \(\vec B\) magnetisches Feld; \(E(\vec k) = E(-\vec k)\)
+
+\includegraphics[width=0.75\textwidth]{kap10_02.png}
+
+\(E_p(\vec k) = -E_n(\vec k)\)
+
+Gruppengeschwindigkeit: \(\frac{\partial \vec v}{\vec t}(\frac{1}{\hbar}\frac{\partial E(\vec k)}{\partial \vec k})=\frac{\partial}{\partial \vec k}(\frac{1}{\hbar}\frac{\partial E(\vec k)}{\partial \vec k})\frac{d\vec k}{dt}=\frac{1}{\hbar^2}\vec F\frac{\partial^2 E(\vec k}{\partial \vec k\partial\vec k}\)
+
+\[\frac{\partial v_i}{\partial t} = \frac{1}{\hbar}\sum_j \frac{\partial^2 E(\vec k)}{\partial k_i\partial_j}F_j\]
+
+Tensor der effektive Masse \([m*]\equiv \stackrel{\mathrm{=}}m^* \)
+
+mit 
+
+\[\left(\frac{1}{m^*}\right)_{ij}=\frac{1}{\hbar^2}\frac{\partial^2 E(\vec k)}{\partial k_i\partial k_j}\]
+
+
+\includegraphics[width=0.75\textwidth]{kap10_03.png}
+
+1D: \(m^*\) ist klalare Größe \(m^*(k) = \frac{\hbar^2}{[\frac{d^2E(k)}{dk^2}]}\)
+
+Bloch-oszillationen: \(\hbar \frac{dk}{dt} = F = -e\mathcal E\)
+
+
+Periode dieser Bloch Oszillationen:
+
+\[T\propto \frac{\delta k}{|dk/dt|}\propto \frac{2\pi/a}{e\mathcal E/\hbar}\]
+
+
+\end{document}
