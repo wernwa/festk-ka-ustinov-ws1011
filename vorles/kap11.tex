@@ -1,0 +1,148 @@
+\input{../headers/header_script.tex}
+%\includegraphics[width=0.75\textwidth]{thepic.png}
+
+\begin{document}
+%\tableofcontents
+\setcounter{chapter}{10}
+\chapter{Halbleiter}
+
+\underline{Charakteristika}:
+
+\begin{itemize}
+\item Metallischen Glanz aber kein Metall
+\item Negativer Temperatur Koeffizient \(\rho\uparrow \quad T\downarrow\)
+\item Photoleitfähigkeit
+\item Eigenschaften können von Verunreinigungen empfindlich abhängen
+\end{itemize}
+
+ Materialien:
+4.hauptgruppe: Si,Se, Ga,Teller, P, B,
+Verbindungen III-V: GaAs, InSb
+II-VI: ZnS,CdS
+IV-IV: SiC
+
+
+\underline{Elektrischer Widerstand}
+
+Metall \(\rho = 10^{-7} \text{ bis } 10^{-8}\Omega m\)
+isolator \(\rho > 10^{12}\Omega m \)
+Halbleiter \(\rho = 10^{-4} \text{ bis } 10^{7}\Omega m \)
+\(\exists\) Bandlücke, kleiner als bei Isolatoren
+bei T=0 Halbleiter sind Isolatoren
+T>0 Wahrscheinlichkeit für eine Termische Anregung
+\(E_g>0,1 ... 2eV\)
+\(E\propto e^{-\frac{E_g}{2kT}}\)
+
+\underline{Intrinsische Halbleiter}: Eigenschaften werden durch Thermische anregung bestimmt
+\underline{Extrinsische Halbleiter}: Eigenschaften werden durch Dotierung von Frembatomen bestimmt
+
+
+\begin{enumerate}
+\item[1)] Intrinsische HL
+
+  \begin{enumerate}
+  \item[a)] Bandlücke und optische Abstände Indirekter Übergang
+ Impuls wird durch Phonon gewährleistet; 
+    \underline{ Kristallimpulserhaltung}
+Übergang hängt von  Phononenspektrum ab und daher von der Temperatur abhängig. Photon: große Energie, kleiner Impuls; Phonon: kleine Energie, großer Impuls
+
+\underline{Direkter Übergang}
+
+schwache Temperaturabhängigkeit (vgl \(1500nm\approx 0,8eV\)
+  \item[b)] Effektive Massen von Elektronen und Löchern
+
+ Bandkrümmung in der Nähe des Übergangs,; Parabolische Näherung:
+\[E_n= E_L + \frac{\hbar^2 k^2}{2m^*}\]
+
+mit n=Elektronen und p=Löcher. Elektronen im Leitungsband im 
+
+\begin{tabular}{ccc}
+&Transversal&Longitudinal\\
+  Si & \(\frac{m^*_t}{m_e}=0,19\)& \(\frac{m^*_l}{m_e}=0,19\)\\
+Ge&  \(\frac{m^*_t}{m_e}=0,082\)& \(\frac{m^*_l}{m_e}=1,57\)
+\end{tabular}
+
+Löcher im Valenzband
+\begin{tabular}{ccc}
+&Transversal&Longitudinal\\
+  Si & \(0,16mc\)& \(0,49mc\)\\
+& leicht Loch& schweres Loch
+\end{tabular}
+
+\(GaAs\)
+\begin{tabular}{ccc}
+&Transversal&Longitudinal\\
+  Löcher & \(\frac{m^*_t}{m_e}=0,12\)& \(\frac{m^*_l}{m_e}=0,61\)\\
+&leicht&schwer\\
+& leicht Loch& schweres Loch
+\end{tabular}
+ 
+  \item[c)] Metall-Halbleiter Übergang
+
+Austrittsarbeit \(\phi\) zum Vakuum. Die Austrittsarbeit bestimmti die el. Eigenschaft.
+
+n-Dotiert: \(\phi_{HL}>\phi_{ME}\) ohmscher Kontakt
+\(\phi_{HL}<\phi_{ME}\) blokierender Kontakt (Schottky-Kontakt). An der Grenzfläche ensteht eine Hochohmige Verarmungszohne. Elektronen fließen ins Metall
+
+p-Dotiert: genau andersherum
+
+
+
+  \end{enumerate}
+
+
+\item[2)] Dotierte HL
+
+  \begin{enumerate}
+  \item[a)] Spezifischer Widerstandhängtstart von der Konzentration der Verunreinigung ab.
+  \item[b)] Donatoren: liefern zusätzliche Elektronen ins Leitungsband: P, As, Sb; haben eine höhere Valenz
+Akzeptoren: liefern zustzliche Löcher in Valenzband. niedrigere Valenz als das Wirtsmaterial: B,Al,Ga,In
+
+Modell: Donator verhält sich wie ein positiv geladenes Ion mit zusätzlichen Elektron. Bohr-Radius somit größer als beim H-Atom; Bindungsenergie \(\approx 10meV\)
+  \end{enumerate}
+
+\item[3)] Inhomogene HL
+
+  \begin{enumerate}
+  \item[a)] p-n Übergang
+
+
+    \begin{itemize}
+    \item angleichung des chem. Potentials (\(E_F\))
+    \item Verarmung freier Ladungsträger im Bereich des Übergangs durch rekombination mit Ladungsträgern von anderen Typ.
+    \item geladenen Störstellen bleiben zurück, es entwickelt sich eine Raumladungszone
+    \end{itemize}
+
+  \item[b)] Schottky-Motell
+
+Kastenförmiger Verlauf der Raumladungs-Zone; \(V(x)=\)Potentialverlauf, in y,z \(\infty\) ausgedehnt Poisson Gl:
+
+\[\Delta V(x) = \frac{-\rho(x)}{\epsilon_0}\]
+
+selbstkonsistenzproblem: \(\rho(x)\) hängt von \(V(x)\) und umgekehrt ab. Itaratir \(\rho(x)\rightarrow V(x)\rightarrow \rho(x)\)
+
+Dicke der Raumladungszone \(eV_D\simeq E_g\approx 1eV,n=10^{10}\text{ bis } 10^{24}\); \(d=1\mu m \text{ bis } 10nm\); vergl. Atom-Atom  \(\epsilon \approx 10^{10} \frac{V}{m}\)
+
+  \item[c)] Ströme in Gleichgewicht
+
+Diffusionsstrom. El aus dem n-HL rekombinieren mit Löchern p-HL \(\Rightarrow \) Ladungs
+
+Feldstrom: Elektronen aus dem p-HL (Minoritätsladungsträder) werden durch das E-Feild in n-HL
+
+Im Gleichgewicht heben sie sich auf. 
+  \end{enumerate}
+
+Ph Übergang unter Spannung
+\begin{itemize}
+\item \(E_F+eU\) muss ausgeglichen sein
+\item Durchlassrichtung U rec  die Potentialdifferenz
+\item Sperrichtung Pot-Diff vergrößert
+\item Diode Durchlassrichtung große lLeitfähigkeit; Sperrichtung kleine Leitfähigkeit
+\end{itemize}
+
+
+\end{enumerate}
+
+
+
+\end{document}
