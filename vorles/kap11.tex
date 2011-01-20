@@ -2,7 +2,7 @@
 %\includegraphics[width=0.75\textwidth]{thepic.png}
 
 \begin{document}
-%\tableofcontents
+\tableofcontents
 \setcounter{chapter}{10}
 \chapter{Halbleiter}
 
@@ -142,6 +142,75 @@ Ph Übergang unter Spannung
 
 
 \end{enumerate}
+
+
+
+\section{Niedrigdimensionale Elektronensysteme}
+
+
+z.B. Halbleiter- Heterostrukturen
+
+\includegraphics[width=0.75\textwidth]{kap11_01.png}
+
+'Modulation-doped heterostructure' (engl)
+
+z.B. 3D Metalle: \(\frac{1}{k_F}\approx 1 A\)
+2DEG\(\equiv\) '2-dimensionales elektron gas'
+
+\[\frac{1}{k_F}\approx 2\pi n)^{-\frac{1}{2}}\]
+
+mit \(n\approx 3,5\cdot 10^{15}m^{-2}\Rightarrow \frac{1}{k}\approx 100 A\)
+
+!Die Gitterkonstante I und II möglichst wenig unterscheiden. z.B. AlGaAs/GaAs: 
+
+'mobility' \([\mu]\) (engl)
+Beweglichkeit: \(u=\frac{|\vec v|}{\vec \epsilon} = \frac{e\tau_D}{m^*}\rightarrow \text{bis zu }10^7\frac{cm^2}{Vs}\)
+
+z-Quantisierung: \(L_z\approx\frac{\lambda_F}{2}\approx 100 A\)
+
+\includegraphics[width=0.75\textwidth]{kap11_02.png}
+
+\(E_F\) turnalbe by Gate
+
+1D system: 1D Kanal \(\rightarrow \) Quantisierung in y-Richtung
+
+
+\includegraphics[width=0.75\textwidth]{kap11_03.png}
+
+'Ballistic quantum wire' \(\rightarrow \) 1D Leiter
+
+Im Dracht treten keine Streuprozesse auf und die Bewegung der e-nen erfolgt ballistisch (ohne Streung ohne WW).
+
+\(\mu\)-Elektrochemisches Potential:
+
+\includegraphics[width=0.75\textwidth]{kap11_04.png}
+
+\[\Delta \mu = eV\]
+
+Strom : 
+
+\begin{align}
+I &= ne\langle  v\rangle \\
+&= \frac{1}{L}\sum_k ev_k \\
+&= \frac{1}{L}\int_0^{\infty} \rho^{1D}_{k} ev_k\left[f(E+\frac{eV}{2}-f(E-\frac{eV}{2}\right]dk \\
+&=\int_0^{\infty}\frac{e}{\pi}\frac{1}{\hbar}\frac{\partial E}{\partial k}dk\cdot eV \\
+&=\frac{2e^2}{h}V
+\end{align}
+
+mit \(\rho^{1D}_k=\frac{2L}{2\pi}\); \(v(k)=\frac{1}{\hbar}\frac{\partial E(k)}{\partial k}\)
+
+'conductance quantization' 
+
+\[\left.\frac{I}{V}\right|_{\text{1 Kanal}} = \frac{2e^2}{h}\]
+
+Leituwertsquantum; Widerstandsquantum: \(R_Q=\frac{h}{2e^2}=12,906 k\Omega\)
+
+\includegraphics[width=0.75\textwidth]{kap11_05.png}
+
+
+für eine Spinrichtung: \(R^\uparrow_Q =R^\downarrow_Q =25,812 k\Omega \)
+
+
 
 
 
