@@ -210,6 +210,87 @@ Leituwertsquantum; Widerstandsquantum: \(R_Q=\frac{h}{2e^2}=12,906 k\Omega\)
 
 für eine Spinrichtung: \(R^\uparrow_Q =R^\downarrow_Q =25,812 k\Omega \)
 
+\section{Niedrigdimensionale elektronensysteme: 0D; 2D}
+
+
+0D: Quantumpunkte (quantum dots)
+
+
+\includegraphics[width=0.75\textwidth]{kap11_06.png}
+
+\includegraphics[width=0.75\textwidth]{kap11_07.png}
+
+Die elektrostatische Energie: \(E(N),N\) ist die Zahl der e-nen auf dem Quantenpunkt (QP).
+
+\[E(N) = \frac{(Ne)^2}{2C}-\phi Ne\]
+
+mit \(\phi\propto V_g\) ist das elektrostatisches Potential
+\(C\propto C_g, E(N)\) umso größer ist, je kleiner der QP und somit \(C\) ist.
+
+Ladeenergie: \(E(N+1) = E(N)\); \((2N+1)e^2 = 2C_g eV_g\); \(V_g = \frac{e}{C_g}(N+\frac{1}{2})\)
+
+
+
+\subsection{Coulomb-Blockade}
+
+\includegraphics[width=0.75\textwidth]{kap11_08.png}
+
+Die Energie \(\frac{e^2}{2C}=E_C\) muss bei der Gate-Spannung \(V_g = \frac{eN}{C_g}\) aufgebracht werden, wenn 1e hinzugefügt (oder entfernt) werden soll.
+
+Wenn Source und drain sind gekoppelt mit dem Widerstand R \(\rightarrow \) Zeitskale \(\delta t \approx RC\)
+
+\[\delta E = \frac{h}{\delta t} \simeq \frac{h}{RC} = \underbrace{\frac{e^2}{c}}_{\propto E_C}\frac{h}{e^2}\frac{1}{R} = E_C\frac{R_Q}{R}\]
+
+\[R^\uparrow_Q = \frac{h}{e^2}=25812\Omega\]
+
+\(\rightarrow \) Fluktationen den Coulomb-Ladeeffekt ausschmieren. Bedingungen für die Beobachtung:
+
+\begin{itemize}
+\item \(R>>R_Q\frac{h}{e^2}\)
+\item \(\frac{e^2}{C}>>k_BT\)
+\end{itemize}
+
+
+\section{Quanten-Hall-Effekt in 2DEG}
+
+\includegraphics[width=0.75\textwidth]{kap11_09.png}
+
+\[m \dot{\vec v} = -e(\vec{ \mathcal E} + \vec v\times\vec B)-\frac{mv}{\tau}\]
+
+\[v_x = -\frac{e\tau}{m}(\mathcal E_x + v_yB)\]
+
+\[v_y = -\frac{e\tau}{m}(\mathcal E_y + v_xB)\]
+
+\[\rightarrow v_y = \begin{pmatrix}\mathcal E_x\\\mathcal E_y\end{pmatrix} =\begin{pmatrix}\rho_{xx}&\rho_{xy}\\\rho_{yx}&\rho_{yy}\end{pmatrix}\begin{pmatrix}j_x\\\j_y\end{pmatrix} \]
+
+für isotrope Materialien \(\rho_{xx}=\rho_{yy}=\frac{m}{ne^2\tau}\); \(\rho_{xy}=\rho_{yx}=\frac{B}{ne}  \)
+
+Mit \(j_y=0,\rightarrow \) es folgt \(\mathcal E_y = -\frac{e\tau}{m}B\mathcal E_x = -\frac{1}{ne}Bj_x = R_H Bj_x\); Hall Konstante: \(R_H = -\frac{1}{ne}\); Quanten-Hall-E. Hall-Widerstand \(R_y = |\frac{\rho_{xy}}{d}|\) \(R_x = |\frac{\rho_{xx}}{d}|\)
+
+Entartungsgrad für jedes Landau-Niveau:
+
+\[g_l = \frac{LW}{(2\pi)^2}(S_{l+1}-S_l)\]
+
+mit \(S\) als Querschnittfläche von Landaurohren in der periodischen Bedingung
+
+\[S_l = (l+\frac{1}{2})\frac{2\pi eB}{\hbar}\]
+
+\[E_l = (l+\frac{1}{2})\hbar\omega_E+\frac{\hbar^2 k^2_{||}}{2m}\]
+
+\[\boxed{g_l = \frac{e}{h}LWB}\]
+
+N Elektronen verteilt auf p voll besetzen Landau Niveaus: \(N=nLWd\)
+
+\[N= p\cdot g_l\]
+
+\[\left.D(E)\right|_{2D}=\frac{m}{\pi \hbar^2} = const\]
+
+
+\[R_y = \rho_{xy}/d = \frac{\rho_{xy}}{ned}=\frac{BLW\cancel d}{Ne\cancel d} = \frac{LWB}{pe^2LWB}=\frac{1}{p}\frac{h}{e^2}=\frac{R_Q}{p}\]
+
+\includegraphics[width=0.75\textwidth]{kap11_10.png}
+
+v.Klitzing entdeckt 1980, Nobel Preis 1985
 
 
 
