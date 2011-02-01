@@ -125,4 +125,162 @@ a - gute Wärmekontakt bis \(mK\)
 b - Probe von Umgebung isoliert \(\approx 10 \mu K\) Bei Cu Kernentmagnetisierung
 
 
+
+\section{Ferrormagnitismus}
+
+
+\begin{itemize}
+\item Spontante Magnetisierung unterhalb unterhalb einer kritischen Temperatur \(T_C\)
+\end{itemize}
+\includegraphics[width=0.75\textwidth]{kap12_09.png}
+
+Grund: Energiegewinn durch Ausrichtung der magnetischen Momente
+
+\includegraphics[width=0.75\textwidth]{kap12_10.png}
+
+
+
+\includegraphics[width=0.75\textwidth]{kap12_11.png}
+
+
+
+\begin{itemize}
+\item[1)] Molekularfeldänderung
+\end{itemize}
+\[B_{eff}=B_A+B_H=B_a+\lambda\mu_0 M\]
+
+\(\lambda\) ist die Molekularfeldkonstante mag WW für 2 Spinns: \(\approx 0.1 T\quad B_H\approx 1000T\)
+\(\Rightarrow \) nicht durch die mag WW der Spins
+
+Magnetisierung wird durch Molekularfeld getrieben
+
+\[M_S = ng\mu_B J B(x),\qquad x = \frac{g\mu_B \lambda\mu_0 M_S}{k_B T}\]
+
+Curie-Konstante
+\[T_C = \frac{n g^2 J(J+1)\mu_B^2 \lambda}{k_B} = C\cdot\lambda\]
+
+\[\Theta =\lambda\cdot C\]
+
+mit \(\Theta\) paramagn Curie Temp.
+
+Fe: \(\lambda\approx 5000,\quad M_S = 1,6\cdot 10^{6}\frac{A}{m}\qquad B_M \approx 1000T\)
+
+\[p^2 = g^2 s(s+1)\]
+
+\begin{itemize}
+\item[2)] Austausch WW zwischen lokalen orten Elektronen
+\end{itemize}
+
+System 2 weiterer Ionen mit 2E (Isolator)
+
+\[\psi(r_1,s_1;r_2,s_2) = \psi(r_1,r_2)\psi(s_1,s_2)\]
+
+\[\psi_S = A[\psi_a(r_1) \psi_b(r_2)+\psi_b(r_1)\psi_a(r_2)  ]\]
+
+Symmetrische Ortswellenfunktion \(\Rightarrow \) Spin Wellenfkt antisymmetrisch
+
+\[\psi_A = A[\psi_a(r_1) \psi_b(r_2)-\psi_b(r_1)\psi_a(r_2)  ]\]
+
+Antisymmetrische Ortswellenfunktion \(\Rightarrow \) Spin Wellenfkt symmetrisch
+
+WW Potential des Gesamtzustandes
+
+\[V(r_1,r_2) = \tilde V(r_2,r_1)\]
+
+Austauschkonst J
+
+\[ J = E_S - E_A \approx 4 A^2 \int \psi_a^*(r_1)\psi_b^*(r_2)\tilde V(r_1,r_2)\psi_b(r_1)\psi_a(r_2)dV_1dV_2\]
+
+Kinetische Energie des e-trons wird vernachlässigt
+
+\begin{itemize}
+\item \(J>0\) - parallele Ausrichtung des Spins
+\item \(J<0\) - antiparallele Ausrichtung des Spins
+\end{itemize}
+
+\[|J| = \frac{3k_B \Theta}{z s(s+1)}\]
+
+
+\[\tilde V_{el}(r_1,r_2) = \frac{e^2}{(4\pi \epsilon_0|r_1-r_2|}\]
+
+Coulomb WW versucht die Spins auszurichten. \(V_i(r_1,V_i(r_2)\), attraktiv, negative Beitrag zu J
+
+relative Gröpe entscheidet über Ausrichtung der Spins
+
+\underline{Alternativ} Pauliprinzip
+
+\(S_1,S_2\) Spinoperatoren der Elektronen
+
+\[S = |s_1+s_2|^2 = \frac{3}{2}+2s_1s_2\]
+
+\(s_1s_2 = -\frac{3}{4}\) \(S=0\) Singulett Zustand
+\(s_1s_2 = -\frac{1}{4}\) \(S=1\) Triplett Zustand
+
+Hamilton Operator für Zustand Spin System
+
+\begin{align}
+H_{\text{spin}}&=\frac{1}{4}(E_S+3E_A)-(E_S-E_A)s_1s_2 \\
+&=\underbrace{\frac{1}{4}(E_S+3E_A)}_{=0\quad \text{bei geeigneter Wahl des Nullpunktes}}-Js_1s_2 \\
+&= -J_{ij}s_is_j\qquad |\text{Heisenberg Modell des Ferrormagneten}
+\end{align}
+
+\begin{itemize}
+\item[3)] Austausch WW im freien Elektronen Gas
+\end{itemize}
+
+Freies Elektronengas \(\rightarrow \) Übergang Ebener Wellen
+
+\begin{align}
+\psi(r_1,r_2) &= A\left[e^{ik_1r_1}e^{ik_2r_2}- e^{ik_1r_2}e^{ik_2r_1}  \right]\\
+&=Ae^{i(k_1r_1+k_2r_2)}\left[1-e^{ik(k_1-k_2)(r_1-r_2)}\right]
+\end{align}
+
+Aufenthaltswahrscheinlichkeit \(dV_1dV_2\)
+
+\[|\psi(r_1,r_2)|^2dV_1dV_2 = |A|^2 \left[1-cos(k_1-k_2)(r_1-r_2)\right]\]
+
+Die Wahrscheinlichkeit zwei Spins mit gleichen Spin am gleichen Ort zu finden verschwindet auch ohne Coulomb WW
+
+\underline{Austauschloch}
+
+Wenn Spins ausgerichtet sind, verringern sich die Abschirmeffekte der Ionenrümpfe und die Aufelektronen werden daher stärker gebunden. Es führt zu einem Energiegewinn.
+
+
+\begin{itemize}
+\item[3)] Spinwellen (Magnonen)
+\end{itemize}
+
+
+Niederenergetische Anregungen, ähnlich Phononen. Eine kollektive Anregung der Bewegung
+
+Spinflip kostet \(\delta E = 2zJs^2; \qquad J\approx k_BT_C\)
+
+Magnonen haben \(E = \hbar\omega\)
+
+Ausrichtung in z-Richtung. Drehmoment \(\mu\times B_M = - g\mu_B S_M\times B_M\)
+
+\[\frac{dS}{dt} = -g\mu_B S\times B_M\]
+
+zeitliche Ableitung des Drehimpulses \(\hbar S =\) angreifenden Drehmoment.
+
+\[U_m = -J S_m(S_{m-1}+S_{m+1}) = \mu B_M = g\mu_BS_MB_M\]
+
+\[\frac{dS_M}{dt}= \frac{J}{\hbar}S_M\times (S_{m-1}+S_{m+1})\]
+
+\[S_{m,x} = Acos(mqa-\omega t)\]
+\[S_{m,y} = Asin(mqa-\omega t)\]
+\[S_{m,z}\sqrt{S^2-A^2}\]
+
+
+mit \(q= \frac{n\pi}{L}\) und \(L\) als die Länge der Kette
+
+Dispersionsrelation
+
+\[\omega = \frac{2JS}{\hbar}[1-cos(qa)] =\frac{4JS}{\hbar} sin^2(\frac{ga}{2}) \]
+
+\[\omega = \frac{JS}{\hbar}a^2q^2\]
+
+\includegraphics[width=0.75\textwidth]{kap12_12.png}
+
+
 \end{document}
